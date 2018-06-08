@@ -1,10 +1,2 @@
 language: php
 
-env:
-  global:
-    - 'FTP_USER=irfan1508'
-    - 'FTP_PASS=083861301636'
-
-script:
-   - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/project-uas'"
-  - "curl -T index.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/project-uas/"
